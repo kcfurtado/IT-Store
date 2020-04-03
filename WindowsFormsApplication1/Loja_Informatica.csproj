@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{755B44A2-C102-419F-BB6D-C6916F04D4E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accao.cs" />
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackup.Designer.cs">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente Alterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente Alterar.Designer.cs">
+      <DependentUpon>frmCliente Alterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEsqueceuSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEsqueceuSenha.Designer.cs">
+      <DependentUpon>frmEsqueceuSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuncionario.Designer.cs">
+      <DependentUpon>frmFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFuncionarioAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuncionarioAlterar.Designer.cs">
+      <DependentUpon>frmFuncionarioAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManutencaoAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManutencaoAlterar.Designer.cs">
+      <DependentUpon>frmManutencaoAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagamento.Designer.cs">
+      <DependentUpon>frmPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutoVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutoVenda.Designer.cs">
+      <DependentUpon>frmProdutoVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutoClienteAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutoClienteAlterar.Designer.cs">
+      <DependentUpon>frmProdutoClienteAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutoCliente.Designer.cs">
+      <DependentUpon>frmProdutoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutoVendaAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutoVendaAlterar.Designer.cs">
+      <DependentUpon>frmProdutoVendaAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorio.Designer.cs">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorio5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorio5.Designer.cs">
+      <DependentUpon>frmRelatorio5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioFunc.Designer.cs">
+      <DependentUpon>frmRelatorioFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioMan.Designer.cs">
+      <DependentUpon>frmRelatorioMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioProdClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioProdClient.Designer.cs">
+      <DependentUpon>frmRelatorioProdClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioProdVen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioProdVen.Designer.cs">
+      <DependentUpon>frmRelatorioProdVen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTelaInicial.Designer.cs">
+      <DependentUpon>frmTelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendaAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendaAlterar.Designer.cs">
+      <DependentUpon>frmVendaAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LojaInformaticaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LojaInformaticaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LojaInformaticaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LojaInformaticaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LojaInformaticaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LojaInformaticaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatorio.cs" />
+    <EmbeddedResource Include="frmRelatorio5.resx">
+      <DependentUpon>frmRelatorio5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioFunc.resx">
+      <DependentUpon>frmRelatorioFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioMan.resx">
+      <DependentUpon>frmRelatorioMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioProdClient.resx">
+      <DependentUpon>frmRelatorioProdClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioProdVen.resx">
+      <DependentUpon>frmRelatorioProdVen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report3ProdutoCliente.rdlc" />
+    <EmbeddedResource Include="Report3Funcionario.rdlc" />
+    <EmbeddedResource Include="Report2Manutencao.rdlc" />
+    <EmbeddedResource Include="frmBackup.resx">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente Alterar.resx">
+      <DependentUpon>frmCliente Alterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEsqueceuSenha.resx">
+      <DependentUpon>frmEsqueceuSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuncionario.resx">
+      <DependentUpon>frmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuncionarioAlterar.resx">
+      <DependentUpon>frmFuncionarioAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManutencaoAlterar.resx">
+      <DependentUpon>frmManutencaoAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagamento.resx">
+      <DependentUpon>frmPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutoVenda.resx">
+      <DependentUpon>frmProdutoVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutoClienteAlterar.resx">
+      <DependentUpon>frmProdutoClienteAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutoCliente.resx">
+      <DependentUpon>frmProdutoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutoVendaAlterar.resx">
+      <DependentUpon>frmProdutoVendaAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorio.resx">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTelaInicial.resx">
+      <DependentUpon>frmTelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendaAlterar.resx">
+      <DependentUpon>frmVendaAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report4ProdutoVenda.rdlc" />
+    <EmbeddedResource Include="Report5ProdutoMaisVendido.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LojaInformaticaDataSet.xsc">
+      <DependentUpon>LojaInformaticaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LojaInformaticaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LojaInformaticaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LojaInformaticaDataSet.xss">
+      <DependentUpon>LojaInformaticaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LojaInformaticaDataSet1.xsc">
+      <DependentUpon>LojaInformaticaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LojaInformaticaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LojaInformaticaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LojaInformaticaDataSet1.xss">
+      <DependentUpon>LojaInformaticaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LojaInformaticaDataSet2.xsc">
+      <DependentUpon>LojaInformaticaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LojaInformaticaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LojaInformaticaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LojaInformaticaDataSet2.xss">
+      <DependentUpon>LojaInformaticaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\frmCliente.datasource" />
+    <None Include="Properties\DataSources\frmClienteAlterar.datasource" />
+    <None Include="Properties\DataSources\frmFuncionario.datasource" />
+    <None Include="Properties\DataSources\frmFuncionarioAlterar.datasource" />
+    <None Include="Properties\DataSources\frmLogin.datasource" />
+    <None Include="Properties\DataSources\frmManutencaoAlterar.datasource" />
+    <None Include="Properties\DataSources\frmMenuPrincipal.datasource" />
+    <None Include="Properties\DataSources\frmProdutoCliente.datasource" />
+    <None Include="Properties\DataSources\frmProdutoClienteAlterar.datasource" />
+    <None Include="Properties\DataSources\frmProdutoVenda.datasource" />
+    <None Include="Properties\DataSources\frmProdutoVendaAlterar.datasource" />
+    <None Include="Properties\DataSources\frmTelaInicial.datasource" />
+    <None Include="Properties\DataSources\Negocio.ClienteNegocio.datasource" />
+    <None Include="Properties\DataSources\Negocio.FuncionarioNegocio.datasource" />
+    <None Include="Properties\DataSources\Negocio.ManutencaoNegocio.datasource" />
+    <None Include="Properties\DataSources\Negocio.PagamentoNegocio.datasource" />
+    <None Include="Properties\DataSources\Negocio.Pertence_Ven_ProVenNegocio.datasource" />
+    <None Include="Properties\DataSources\Negocio.Possui_Vend_PagaNegocio.datasource" />
+    <None Include="Properties\DataSources\Negocio.ProdutoClienteNegocio.datasource" />
+    <None Include="Properties\DataSources\Negocio.ProdutoVendaNegocio.datasource" />
+    <None Include="Properties\DataSources\Negocio.RefereNegocio.datasource" />
+    <None Include="Properties\DataSources\Negocio.Tem_Pag_ManNegocio.datasource" />
+    <None Include="Properties\DataSources\Negocio.VendaNegocio.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Cliente.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.ClienteColecao.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Funcionario.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.FuncionarioColecao.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Manutencao.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.ManutencaoColecao.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Pagamento.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Pertence_Ven_ProVen.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Pertence_Ven_ProVenColecao.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Possui_Vend_Paga.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Possui_Vend_PagaColecao.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.ProdutoCliente.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.ProdutoClienteColecao.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.ProdutoVenda.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.ProdutoVendaColecao.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Refere.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.RefereColecao.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Tem_Pag_Man.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Tem_Pag_ManColecao.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.Venda.datasource" />
+    <None Include="Properties\DataSources\ProjetoTransferencia.VendaColecao.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication1.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication1.Properties.Settings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{a4b1e5a6-e86b-4e49-ad04-71ebecb44599}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjetoTransferencia\ProjetoTransferencia.csproj">
+      <Project>{cd4636db-1538-4ebe-8d55-b09b3e56ed9c}</Project>
+      <Name>ProjetoTransferencia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\produto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Illustration-Of-A-Blue-Power-Button-Icon-10231390D8FF8CC0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s5b59h.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_compra1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_unicv10anos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f26bea30aa6f6eb33fed180539349f22_XL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_icon %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

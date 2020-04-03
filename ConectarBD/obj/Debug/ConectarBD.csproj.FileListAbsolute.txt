@@ -1,0 +1,6 @@
+C:\Users\LABRAC\documents\visual studio 2015\Projects\WindowsFormsApplication1\ConectarBD\bin\Debug\ConectarBD.dll.config
+C:\Users\LABRAC\documents\visual studio 2015\Projects\WindowsFormsApplication1\ConectarBD\bin\Debug\ConectarBD.dll
+C:\Users\LABRAC\documents\visual studio 2015\Projects\WindowsFormsApplication1\ConectarBD\bin\Debug\ConectarBD.pdb
+C:\Users\LABRAC\documents\visual studio 2015\Projects\WindowsFormsApplication1\ConectarBD\obj\Debug\ConectarBD.csprojResolveAssemblyReference.cache
+C:\Users\LABRAC\documents\visual studio 2015\Projects\WindowsFormsApplication1\ConectarBD\obj\Debug\ConectarBD.dll
+C:\Users\LABRAC\documents\visual studio 2015\Projects\WindowsFormsApplication1\ConectarBD\obj\Debug\ConectarBD.pdb
